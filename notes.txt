@@ -1,0 +1,50 @@
+npm uninstall -g @angular/cli
+npm cache clean
+npm cache verify
+npm cache verify --force
+npm cache clean --force
+npm install -g @angular/cli@latest
+
+//creating angular project
+ng new fitnessClub
+(styles--scss)
+
+ng g c home
+ng g c login
+ng g c join
+ng g c profile
+ng g c bmi
+ng g c forgotpass
+ng g c showblog
+ng g s join
+
+
+npm i express
+npm i mongodb
+npm i nodemon
+npm i body-parser
+npm i bcrypt
+npm i jsonwebtoken
+npm i nodemailer
+npm i fs
+npm i nodemailer-smtp-transport
+npm i handlebars
+npm i dotenv
+npm i cloudinary multer multer-storage-cloudinary
+npm install @angular/cdk --save
+npm i angular-bootstrap-md --save
+npm install -–save chart.js@2.5.0 @types/chart.js @fortawesome/fontawesome-free hammerjs animate.css
+ng add @angular/material
+npm install @tinymce/tinymce-angular
+
+
+//for testing the application, should run simultaneously
+ng build --watch
+nodemon server.js
+
+//now open http://localhost:3000/ in browser
+
+//deploying
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
